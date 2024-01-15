@@ -20,10 +20,15 @@ test('Launch Saledforce Login', async () => {
     const page = await browserContext.newPage();
     await page.goto('https://login.salesforce.com/');
     console.log('Current Page URL :' + page.url());
-    await page.locator('#username').fill('esaimani');
-    await page.locator('#password').fill('password');
-    await page.waitForTimeout(5000);
+    await page.locator('#username').fill('isainew@gmail.com');
+    await page.locator('#password').fill('Salesforce@2024');
+    // await page.waitForTimeout(5000);
     await page.locator('[type="submit"]').click();
+    await page.waitForTimeout(15000);
+    console.log(await page.title());
+    console.log(page.url());
+
+
 
 
 })
