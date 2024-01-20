@@ -43,7 +43,8 @@ test.skip('***** Assignment: 1 Create Lead *****', async () => {
     //Click on Links Dropdown
     await page.click("//one-app-nav-bar-item-root[@data-id='Lead']//one-app-nav-bar-item-dropdown");
     //Click on New Lead Button
-    await page.click("text = New Lead");
+    // await page.click("text = New Lead");
+    await page.getByText('New Lead').click();
     //Select the Saluation dropdown
     await page.click("[name='salutation']");
     //Select Mr from Saluation dropdown
@@ -155,7 +156,7 @@ Test Steps:
 */
 
 console.log('***** Assignment: 3 Create Individuals *****');
-test('***** Assignment: 3 Create Individuals *****', async () => {
+test.skip('***** Assignment: 3 Create Individuals *****', async () => {
     test.setTimeout(50000);
     //Launch the Browser
     const browser = await chromium.launch();
@@ -206,8 +207,8 @@ Test Steps:
 */
 
 console.log('***** Assignment: 4 Edit Individuals *****');
-test('***** Assignment: 4 Edit Individuals *****', async () => {
-    test.setTimeout(50000);
+test.only('***** Assignment: 4 Edit Individuals *****', async () => {
+    test.setTimeout(80000);
     //Launch the Browser
     const browser = await chromium.launch();
     //Create Browser Context
@@ -230,6 +231,27 @@ test('***** Assignment: 4 Edit Individuals *****', async () => {
 
     //Click on Individuals
     await page.click('text = Individuals');
+
+    //Click on Esaimani
+    await page.click("text = Esaimani");
+
+    await page.waitForLoadState();
+
+    //Click on Edit Button
+    await page.click("div[title='Edit']");
+
+    //Click on Saluation
+    await page.locator("a[class='select']").nth(0).click();
+
+    // await page.click("div[class^='salutation']");
+
+    //Select the Saluation
+    await page.getByTitle("Mr.").click();
+
+    //Click on Save Button
+    await page.click("button[title='Save'] span[class=' label bBody']");
+
+
 
 })
 
