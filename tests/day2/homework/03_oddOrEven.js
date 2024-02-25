@@ -12,7 +12,7 @@
 
 function checkOddOrEven(number) {
     if (typeof number !== 'number') {
-        return 'Input Error: Student Score should be in numeric format';
+        return 'Input Error: number should be in numeric format';
     }
     else if (number <= 0) {
         return 'Input Error: Please enter the number range starting from 1';

@@ -40,7 +40,7 @@ test.skip('***** Assignment: 1 Create Lead *****', async () => {
     await page.click("[aria-label='View All Applications']");
     //Click on sales
     await page.click("[title='Manage your sales process with accounts, leads, opportunities, and more']");
-    //Click on Links Dropdown
+    //Click on Leads Dropdown
     await page.click("//one-app-nav-bar-item-root[@data-id='Lead']//one-app-nav-bar-item-dropdown");
     //Click on New Lead Button
     // await page.click("text = New Lead");

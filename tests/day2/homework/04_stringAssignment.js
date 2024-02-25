@@ -61,10 +61,10 @@ function isAnagram(str1, str2) {
 
 }
 
-console.log(isAnagram('listen', 'silent'));
+console.log(isAnagram('listen', 'silents'));
 
 
-let word = 'esaimani';
+let word = 'malayalam';
 console.log(isPolindrome(word));
 
 function isPolindrome(word) {

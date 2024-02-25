@@ -14,19 +14,16 @@
 
 */
 
-const { type } = require("os");
-
 function checkNumberType(number) {
    if (typeof number === 'number')
 
       if (number > 0) {
-         return 'Given Number : '+ number+' is Greater than Zero';
+         return 'Given Number : ' + number + ' is Greater than Zero';
       } else if (number < 0) {
-         return 'Given Number : '+ number+' is Less than Zero';
+         return 'Given Number : ' + number + ' is Less than Zero';
       } else {
          return 'Given Number is Zero';
       }
-
 
    else
 

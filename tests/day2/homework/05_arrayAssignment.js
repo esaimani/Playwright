@@ -155,7 +155,7 @@ console.log('***** Remove Duplicates *****');
 // Output: resultArray = [1, 2, 3, 4, 5, 6]
 
 function removeDuplicates(array) {
-    let arrayWithoutDuplicates = new Set(arrayWithDuplicates);
+    let arrayWithoutDuplicates = new Set(array);
     return Array.from(arrayWithoutDuplicates);
 }
 let arrayWithDuplicates = [1, 2, 3, 4, 2, 5, 6, 1, 6];
@@ -175,7 +175,7 @@ function findOccurances(array) {
 }
 
 const values = [2, 4, 5, 2, 1, 2, 5];
-const k = 7
+const k = 5
 console.log(findOccurances(values));
 
 

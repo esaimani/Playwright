@@ -14,21 +14,18 @@
 
 */
 
-const { type } = require("os");
-
 let number = 0;
 checkNumberType(number);
 
 function checkNumberType(number) {
-    if (number>0) {
-        console.log(number +' is greater than zero');
+    if (number > 0) {
+        console.log(number + ' is greater than zero');
     }
-    else if(number<0)
-    {
-        console.log(number +' is less than zero');
+    else if (number < 0) {
+        console.log(number + ' is less than zero');
     }
     else
-    console.log(number +' is zero');
+        console.log(number + ' is zero');
 
 }
 
@@ -46,30 +43,30 @@ function checkNumberType(number) {
 
 */
 
-calculateGrade(89);
+calculateGrade(25);
 function calculateGrade(score) {
-    
-switch (true) {
-    case (score >=90):
-        console.log('Excellent');
-        break;
-    case (score <90 && score >=80):
-        console.log('Very good');
-        break;
-    case (score <80 && score >=70):
-        console.log('Good');
-        break; 
-    case (score <70 && score >=60):
-        console.log('Average');
-        break;     
-    case (score <60 && score >=50):
-        console.log('Just Pass');
-        break;     
-    default:
-        console.log('Fail');
-        break;
-}
-    
+
+    switch (true) {
+        case (score >= 90):
+            console.log('Excellent');
+            break;
+        case (score >= 80):
+            console.log('Very good');
+            break;
+        case (score >= 70):
+            console.log('Good');
+            break;
+        case (score >= 60):
+            console.log('Average');
+            break;
+        case (score >= 50):
+            console.log('Just Pass');
+            break;
+        default:
+            console.log('Fail');
+            break;
+    }
+
 }
 
 
@@ -84,8 +81,4 @@ switch (true) {
 4. Call the function and print the result
 
 */
-
-function checkOddOrEven(number) {
-    
-}
 
